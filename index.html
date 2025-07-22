@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Under Construction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        .gear {
+            width: 80px;
+            height: 80px;
+            margin: 0 10px;
+            display: inline-block;
+            animation: spin 2s linear infinite;
+        }
+        .gear2 {
+            animation-direction: reverse;
+            animation-duration: 3s;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .btn {
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background: #ffc107;
+            transform: scale(1.08);
+        }
+        .message {
+            margin-top: 25px;
+            font-size: 1.2em;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .message.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 Under Construction 🚧</h1>
+        <p>We're working hard to launch something amazing!<br>Check back soon for updates.</p>
+        <div>
+            <svg class="gear" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="35" stroke="#fff" stroke-width="8" fill="none"/>
+                <g>
+                    <rect x="47" y="10" width="6" height="20" rx="3" fill="#ff9800"/>
+                    <rect x="47" y="70" width="6" height="20" rx="3" fill="#ff9800"/>
+                    <rect x="10" y="47" width="20" height="6" rx="3" fill="#ff9800"/>
+                    <rect x="70" y="47" width="20" height="6" rx="3" fill="#ff9800"/>
+                </g>
+            </svg>
+            <svg class="gear gear2" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="25" stroke="#fff" stroke-width="6" fill="none"/>
+                <g>
+                    <rect x="48" y="5" width="4" height="15" rx="2" fill="#ffc107"/>
+                    <rect x="48" y="80" width="4" height="15" rx="2" fill="#ffc107"/>
+                    <rect x="5" y="48" width="15" height="4" rx="2" fill="#ffc107"/>
+                    <rect x="80" y="48" width="15" height="4" rx="2" fill="#ffc107"/>
+                </g>
+            </svg>
+        </div>
+        <button class="btn" onclick="showMessage()">Click for a Surprise!</button>
+        <div class="message" id="message">🎉 Thanks for visiting! Stay tuned for something awesome. 🎉</div>
+    </div>
+    <script>
+        function showMessage() {
+            var msg = document.getElementById('message');
+            msg.classList.add('show');
+            setTimeout(function() {
+                msg.classList.remove('show');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
