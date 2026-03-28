@@ -288,7 +288,7 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
         </div>
         <div class="profile-info">
             <h2 class="profile-name">Mahababur Rahman</h2>
-            <p class="profile-title">Java & Spring Boot Specialist</p>
+            <p class="profile-title">Software Engineer · Laravel · Spring Boot · Next.js</p>
             <div class="profile-status">
                 <span class="status-indicator"></span>
                 <span>Available for opportunities</span>
@@ -299,7 +299,7 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
     <div class="about-content">
         <div class="about-card">
             <h3>🚀 Professional Summary</h3>
-            <p>Highly accomplished and innovative Software Engineer with <strong>1+ years</strong> of experience specializing in <span class="highlight">Java and Spring Boot</span>. Proven ability to design, develop, and deploy high-performance enterprise applications that optimize system efficiency.</p>
+            <p>Software Engineer with approximately <strong>2 years</strong> of experience building enterprise platforms using PHP/Laravel, Java Spring Boot, and Next.js 15.</p>
         </div>
 
         <div class="about-card">
@@ -365,106 +365,47 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
 <div class="skills-section">
     <div class="skills-header">
         <h2>🛠️ Technical Arsenal</h2>
-        <p>Comprehensive skill set for modern software development</p>
+        <p>Full-stack skills across backend, frontend, database &amp; infrastructure</p>
     </div>
 
     <div class="skills-grid">
         <div class="skill-category">
-            <h3>💻 Programming Languages</h3>
+            <h3>⚙️ Backend</h3>
             <div class="skill-items">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Java</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">JavaScript (ES6+)</span>
-                        <span class="skill-level">Proficient</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">TypeScript</span>
-                        <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">PHP 8.x / Laravel 11</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-progress" style="width:92%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Java Spring Boot</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">RESTful APIs / JWT / OAuth 2.0</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">ASP.NET Core (CRUD/MVC)</span><span class="skill-level">Basic</span></div><div class="skill-bar"><div class="skill-progress" style="width:40%"></div></div></div>
             </div>
         </div>
 
         <div class="skill-category">
-            <h3>🚀 Frameworks & Libraries</h3>
+            <h3>🎨 Frontend</h3>
             <div class="skill-items">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Spring Boot</span>
-                        <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Hibernate ORM</span>
-                        <span class="skill-level">Proficient</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Angular</span>
-                        <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Next.js 15 / React.js</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-progress" style="width:78%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Vue.js 3 / Nuxt.js</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Tailwind CSS / Zustand / React Query</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-progress" style="width:72%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-level">In Progress</span></div><div class="skill-bar"><div class="skill-progress" style="width:40%"></div></div></div>
             </div>
         </div>
 
         <div class="skill-category">
-            <h3>🗄️ Databases & Tools</h3>
+            <h3>🗄️ Database &amp; Infrastructure</h3>
             <div class="skill-items">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">MySQL</span>
-                        <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">PostgreSQL</span>
-                        <span class="skill-level">Proficient</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Docker</span>
-                        <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">MySQL 8 / PostgreSQL</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Redis / ProxySQL</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Docker / GitHub Actions / CI-CD</span><span class="skill-level">Foundational</span></div><div class="skill-bar"><div class="skill-progress" style="width:60%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Grafana / Nginx / Cloudflare</span><span class="skill-level">Working Knowledge</span></div><div class="skill-bar"><div class="skill-progress" style="width:65%"></div></div></div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>🏗️ Architecture &amp; Patterns</h3>
+            <div class="skill-items">
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Multi-Tenant (DB-per-tenant)</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">CQRS / DDD</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-progress" style="width:78%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">Repository + Service Layer / RBAC</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span class="skill-name">bKash / Nagad / Rocket / Stripe / PayPal</span><span class="skill-level">Integrated</span></div><div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div></div>
             </div>
         </div>
     </div>
@@ -477,21 +418,20 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
 .skills-header p { color: var(--text-secondary); }
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; }
 .skill-category { background: rgba(26, 26, 26, 0.8); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; }
-.skill-category h3 { color: var(--accent-cyan); margin-bottom: 20px; font-size: 1.2rem; }
+.skill-category h3 { color: var(--accent-cyan); margin-bottom: 20px; font-size: 1.1rem; }
 .skill-items { display: flex; flex-direction: column; gap: 15px; }
-.skill-item { }
 .skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; }
-.skill-name { color: var(--text-primary); font-weight: 600; }
-.skill-level { color: var(--accent-orange); font-size: 0.9rem; }
+.skill-name { color: var(--text-primary); font-weight: 600; font-size: 0.9rem; }
+.skill-level { color: var(--accent-orange); font-size: 0.85rem; }
 .skill-bar { width: 100%; height: 8px; background: var(--bg-tertiary); border-radius: 4px; overflow: hidden; }
-.skill-progress { height: 100%; background: linear-gradient(90deg, var(--primary-green), var(--secondary-green)); border-radius: 4px; transition: width 2s ease-in-out; animation: skillLoad 2s ease-in-out; }
+.skill-progress { height: 100%; background: linear-gradient(90deg, var(--primary-green), var(--secondary-green)); border-radius: 4px; animation: skillLoad 2s ease-in-out; }
 @keyframes skillLoad { from { width: 0%; } }
 </style>`;
-        
+
         this.addOutput(skillsText);
     }
 
-    // Matrix Rain Effect
+        // Matrix Rain Effect
     startMatrixRain() {
         const canvas = document.getElementById('matrix-canvas');
         const ctx = canvas.getContext('2d');
@@ -499,7 +439,7 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         
-        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|]}";
         const matrixArray = matrix.split("");
         
         const fontSize = 10;
@@ -592,7 +532,7 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
         <div class="matrix-lines">
             <div class="matrix-line">The Matrix has you...</div>
             <div class="matrix-line">Follow the white rabbit 🐰</div>
-            <div class="matrix-line">But first, check out my Java skills! ☕</div>
+            <div class="matrix-line">But first, check out my Laravel skills! 🚀</div>
         </div>
     </div>
 </div>
@@ -623,9 +563,9 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
     </div>
     <div class="coffee-text">
         <div class="coffee-line">Brewing coffee...</div>
-        <div class="coffee-line">Perfect for coding Java! ☕</div>
+        <div class="coffee-line">Perfect for coding Laravel! ☕</div>
         <div class="coffee-line">Caffeine level: <span class="highlight">MAXIMUM</span></div>
-        <div class="coffee-line">Ready to code some Spring Boot magic! 🚀</div>
+        <div class="coffee-line">Ready to code some Laravel magic! 🚀</div>
     </div>
 </div>
 
@@ -648,13 +588,13 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
 
     jokeCommand() {
         const jokes = [
-            "Why do Java developers wear glasses? Because they don't C#! 😄",
+            "Why do Laravel developers make great musicians? Because they know all the right Eloquent chords! 🎸",
             "How many programmers does it take to change a light bulb? None, that's a hardware problem! 💡",
             "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
             "What's a programmer's favorite hangout place? Foo Bar! 🍺",
             "Why did the programmer quit his job? He didn't get arrays! 📊",
             "What do you call a programmer from Finland? Nerdic! 🇫🇮",
-            "Why do Java programmers have to wear glasses? Because they can't C! 👓"
+            "A SQL query walks into a bar, walks up to two tables and asks... Can I JOIN you? 😄"
         ];
         const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
         
@@ -724,47 +664,92 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
 <div class="experience-section">
     <div class="experience-header">
         <h2>💼 Professional Journey</h2>
-        <p>Building enterprise solutions with Java & Spring Boot</p>
+        <p>Building enterprise platforms across backend, frontend &amp; infrastructure</p>
     </div>
 
     <div class="timeline">
+
         <div class="timeline-item">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                 <div class="job-header">
                     <h3>Software Engineer</h3>
                     <div class="company-info">
-                        <span class="company">Pro Info Sys BD</span>
-                        <span class="duration">Present</span>
+                        <span class="company">Auxtech Limited</span>
+                        <span class="duration">July 2024 – Present</span>
                     </div>
                 </div>
-                <div class="job-location">📍 Gulshan, Dhaka-1212, Bangladesh</div>
-                
+                <div class="job-location">📍 Dhaka, Bangladesh</div>
+
                 <div class="achievements">
-                    <h4>🎯 Key Achievements:</h4>
+                    <h4>🎯 Key Work:</h4>
                     <ul class="achievement-list">
-                        <li>Spearheaded development of high-volume enterprise Java applications</li>
-                        <li>Achieved <span class="highlight">99.9% uptime</span> serving thousands of users daily</li>
-                        <li>Reduced time-to-market by <span class="highlight">15%</span> through cross-team collaboration</li>
-                        <li>Improved system performance by <span class="highlight">25%</span> via microservices architecture</li>
-                        <li>Mentored <span class="highlight">3+ junior developers</span>, elevating team standards</li>
-                        <li>Enhanced project delivery efficiency by <span class="highlight">20%</span> using Agile methodologies</li>
+                        <li>Architected SASA multi-tenant SaaS platform: 4-layer DB architecture (Platform → Master → Warm Pool → Tenant DBs), ProxySQL connection pooling, MySQL read replica, Grafana monitoring</li>
+                        <li>Implemented CQRS pattern in SASA — command (write) via Service layer, query (read) via dedicated Read Repositories</li>
+                        <li>Applied Domain-Driven Design across MVE backend — Product, Order, Cart, Inventory bounded contexts with Repository + Service layer boundaries</li>
+                        <li>Integrated Courier API into MVE: automated shipment creation, real-time tracking webhooks, PDF label generation</li>
+                        <li>Built Next.js 15 storefront with BFF proxy pattern, BroadcastChannel cross-tab auth sync, Zustand + React Query</li>
+                        <li>Integrated bKash, Nagad, Rocket (E7 LMS) and Stripe, PayPal (SASA) payment gateways</li>
+                        <li>Implemented OAuth 2.0 social login (Google, Facebook) via Laravel Socialite + JWT in MVE</li>
+                        <li>Set up Grafana dashboards, RBAC with 2FA, API rate limiting, audit logging</li>
                     </ul>
                 </div>
 
                 <div class="tech-stack">
-                    <h4>🛠️ Technologies Used:</h4>
+                    <h4>🛠️ Technologies:</h4>
                     <div class="tech-tags">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Laravel 11</span>
+                        <span class="tech-tag">Next.js 15</span>
+                        <span class="tech-tag">Vue.js 3</span>
+                        <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">ProxySQL</span>
+                        <span class="tech-tag">Grafana</span>
                         <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Microservices</span>
-                        <span class="tech-tag">Agile</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Cloudflare</span>
+                        <span class="tech-tag">Courier API</span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="job-header">
+                    <h3>Software Developer Intern</h3>
+                    <div class="company-info">
+                        <span class="company">Pro Info Sys BD</span>
+                        <span class="duration">June 2023 – December 2023</span>
+                    </div>
+                </div>
+                <div class="job-location">📍 Dhaka, Bangladesh</div>
+
+                <div class="achievements">
+                    <h4>🎯 Key Work:</h4>
+                    <ul class="achievement-list">
+                        <li>Built transaction processing and account management modules for an enterprise banking application using Java Spring Boot and Spring MVC</li>
+                        <li>Developed a Leave Management System with dynamic rule engine — configurable leave types, policy-based accrual rules, and automated leave generation per employee role</li>
+                        <li>Wrote unit tests using JUnit and Mockito; resolved production defects and optimised slow database queries through indexing and query restructuring</li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack">
+                    <h4>🛠️ Technologies:</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Spring MVC</span>
+                        <span class="tech-tag">JUnit</span>
+                        <span class="tech-tag">Mockito</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -778,25 +763,25 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
 .timeline-item { position: relative; margin-bottom: 30px; }
 .timeline-marker { position: absolute; left: -23px; top: 10px; width: 16px; height: 16px; background: var(--primary-green); border-radius: 50%; border: 3px solid var(--bg-primary); box-shadow: 0 0 10px var(--primary-green); }
 .timeline-content { background: rgba(26, 26, 26, 0.8); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; margin-left: 20px; }
-.job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
-.job-header h3 { color: var(--text-primary); font-size: 1.3rem; margin: 0; }
+.job-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
+.job-header h3 { color: var(--text-primary); font-size: 1.2rem; margin: 0; }
 .company-info { text-align: right; }
 .company { color: var(--accent-cyan); font-weight: bold; display: block; }
 .duration { color: var(--accent-orange); font-size: 0.9rem; }
-.job-location { color: var(--text-muted); margin-bottom: 20px; }
+.job-location { color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem; }
 .achievements h4 { color: var(--accent-purple); margin-bottom: 15px; }
 .achievement-list { list-style: none; padding: 0; }
-.achievement-list li { color: var(--text-secondary); padding: 8px 0; border-bottom: 1px solid rgba(51, 51, 51, 0.3); position: relative; padding-left: 20px; }
+.achievement-list li { color: var(--text-secondary); padding: 8px 0; border-bottom: 1px solid rgba(51, 51, 51, 0.3); position: relative; padding-left: 20px; font-size: 0.95rem; line-height: 1.5; }
 .achievement-list li::before { content: '✅'; position: absolute; left: 0; }
-.highlight { color: var(--primary-green); font-weight: bold; }
 .tech-stack { margin-top: 20px; }
 .tech-stack h4 { color: var(--accent-orange); margin-bottom: 15px; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.tech-tag { background: rgba(0, 255, 65, 0.1); color: var(--primary-green); padding: 5px 12px; border-radius: 15px; font-size: 0.9rem; border: 1px solid var(--primary-green); }
+.tech-tag { background: rgba(0, 255, 65, 0.1); color: var(--primary-green); padding: 4px 12px; border-radius: 15px; font-size: 0.85rem; border: 1px solid var(--primary-green); }
 </style>`;
-        
+
         this.addOutput(experienceText);
     }
+
 
     // Utility methods
     navigateHistory(direction) {
@@ -922,8 +907,8 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
         <div class="contact-card">
             <div class="contact-icon">💼</div>
             <h3>LinkedIn</h3>
-            <p>linkedin.com/in/mahababur-2-bc23/</p>
-            <button class="contact-btn" onclick="window.open('https://linkedin.com/in/mahababur-2-bc23/')">Connect</button>
+            <p>linkedin.com/in/al-mamun-2047b2195</p>
+            <button class="contact-btn" onclick="window.open('https://linkedin.com/in/al-mamun-2047b2195')">Connect</button>
         </div>
     </div>
 
@@ -959,72 +944,102 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
         const projectsText = `
 <div class="projects-section">
     <div class="projects-header">
-        <h2>🚀 Project Portfolio</h2>
-        <p>Showcasing enterprise-grade applications and innovative solutions</p>
+        <h2>🚀 Key Projects</h2>
+        <p>Production platforms and enterprise applications</p>
     </div>
 
     <div class="projects-grid">
+
         <div class="project-card featured">
             <div class="project-header">
-                <h3>Enterprise Microservices Platform</h3>
-                <div class="project-status">Production</div>
+                <h3>MVE — Multi-Vendor E-commerce Marketplace</h3>
+                <div class="project-status live">Live</div>
             </div>
             <div class="project-description">
-                High-volume application serving thousands of users with 99.9% uptime. Implemented microservices architecture resulting in 25% performance improvement.
+                Full-stack multi-vendor marketplace: DDD-structured Laravel 11 backend, Next.js 15 customer storefront,
+                and Vue.js 3 admin/vendor dashboard. Features vendor commission engine, real-time inventory tracking,
+                queue-based notifications, OAuth 2.0 social login (Google/Facebook), and Courier API integration
+                (shipment creation, tracking webhooks, PDF label generation).
             </div>
             <div class="project-tech">
-                <span class="tech-badge">Java</span>
-                <span class="tech-badge">Spring Boot</span>
-                <span class="tech-badge">Docker</span>
-                <span class="tech-badge">MySQL</span>
-            </div>
-            <div class="project-metrics">
-                <div class="metric">
-                    <span class="metric-value">99.9%</span>
-                    <span class="metric-label">Uptime</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">25%</span>
-                    <span class="metric-label">Performance ↑</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-header">
-                <h3>Spring Boot API Gateway</h3>
-                <div class="project-status">Active</div>
-            </div>
-            <div class="project-description">
-                RESTful API development with database optimization and Angular frontend integration. Comprehensive testing with JUnit.
-            </div>
-            <div class="project-tech">
-                <span class="tech-badge">Spring Boot</span>
+                <span class="tech-badge">Laravel 11</span>
+                <span class="tech-badge">Next.js 15</span>
                 <span class="tech-badge">PostgreSQL</span>
-                <span class="tech-badge">Angular</span>
-                <span class="tech-badge">JUnit</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Vue.js 3</span>
+                <span class="tech-badge">Courier API</span>
+                <span class="tech-badge">OAuth 2.0</span>
+                <span class="tech-badge">DDD</span>
             </div>
         </div>
 
         <div class="project-card">
             <div class="project-header">
-                <h3>Real-time Data Processing System</h3>
-                <div class="project-status">Development</div>
+                <h3>SASA — Multi-Tenant SaaS E-commerce Platform</h3>
+                <div class="project-status">Active Dev</div>
             </div>
             <div class="project-description">
-                Event-driven architecture with real-time data streaming, scalable system design, and performance monitoring.
+                4-layer database architecture: Platform DB → Master DB → Warm Pool (10 pre-provisioned DBs)
+                → Tenant Production DBs. Warm Pool provisioning delivers new tenants in under 5 seconds.
+                Template DB with 19 e-commerce tables auto-cloned per tenant. ProxySQL connection pooling
+                with MySQL read replica routing. CQRS pattern, Grafana monitoring, 2FA, RBAC, audit logging.
             </div>
             <div class="project-tech">
-                <span class="tech-badge">Java</span>
-                <span class="tech-badge">Spring Boot</span>
-                <span class="tech-badge">Microservices</span>
-                <span class="tech-badge">Kafka</span>
+                <span class="tech-badge">Laravel 11</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">ProxySQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Grafana</span>
+                <span class="tech-badge">CQRS</span>
+                <span class="tech-badge">Vue.js 3</span>
+                <span class="tech-badge">Stripe/PayPal</span>
             </div>
         </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>E7 — Learning Management System</h3>
+                <div class="project-status">Active Dev</div>
+            </div>
+            <div class="project-description">
+                Three-portal LMS (Admin, Trainer, Student) built for the Bangladesh market.
+                Integrated bKash, Nagad, and Rocket local payment gateways.
+                Database schema optimised from 19 to 10 tables with full migration and seeder suite.
+            </div>
+            <div class="project-tech">
+                <span class="tech-badge">Laravel 11</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">bKash</span>
+                <span class="tech-badge">Nagad</span>
+                <span class="tech-badge">Rocket</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-header">
+                <h3>ClickShop — E-commerce Platform</h3>
+                <div class="project-status github">GitHub</div>
+            </div>
+            <div class="project-description">
+                Full e-commerce platform: shopping cart, checkout, order management,
+                admin dashboard, product filtering, and sales analytics.
+            </div>
+            <div class="project-tech">
+                <span class="tech-badge">Laravel 11</span>
+                <span class="tech-badge">Bootstrap 5</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">jQuery</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/mamun792/ClickShop" target="_blank" class="project-link">🔗 View on GitHub</a>
+            </div>
+        </div>
+
     </div>
 
     <div class="github-link">
-        <p>🔗 View more projects on <a href="https://github.com/mamun792" target="_blank">GitHub</a></p>
+        <p>🔗 More at <a href="https://github.com/mamun792" target="_blank">github.com/mamun792</a> — Proprietary projects available for code review on request.</p>
     </div>
 </div>
 
@@ -1033,29 +1048,29 @@ kbd { background: var(--bg-tertiary); border: 1px solid var(--border-color); bor
 .projects-header { text-align: center; margin-bottom: 30px; }
 .projects-header h2 { color: var(--primary-green); font-size: 1.8rem; margin-bottom: 10px; }
 .projects-header p { color: var(--text-secondary); }
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-bottom: 30px; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 25px; margin-bottom: 30px; }
 .project-card { background: rgba(26, 26, 26, 0.8); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; transition: all 0.3s ease; }
-.project-card:hover { transform: translateY(-5px); border-color: var(--primary-green); box-shadow: 0 10px 30px rgba(0, 255, 65, 0.2); }
-.project-card.featured { border-color: var(--primary-green); background: rgba(0, 255, 65, 0.05); }
-.project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
-.project-header h3 { color: var(--text-primary); font-size: 1.2rem; margin: 0; }
-.project-status { padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; }
-.project-card .project-status { background: var(--primary-green); color: var(--bg-primary); }
-.project-card:not(.featured) .project-status { background: var(--accent-orange); color: var(--bg-primary); }
-.project-description { color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; }
-.project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-.tech-badge { background: rgba(0, 255, 65, 0.1); color: var(--primary-green); padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; border: 1px solid var(--primary-green); }
-.project-metrics { display: flex; gap: 20px; }
-.metric { text-align: center; }
-.metric-value { display: block; color: var(--primary-green); font-size: 1.5rem; font-weight: bold; }
-.metric-label { color: var(--text-muted); font-size: 0.8rem; }
-.github-link { text-align: center; padding: 20px; background: rgba(42, 42, 42, 0.5); border-radius: 8px; }
+.project-card:hover { transform: translateY(-5px); border-color: var(--primary-green); box-shadow: 0 10px 30px rgba(0,255,65,0.15); }
+.project-card.featured { border-color: var(--primary-green); background: rgba(0,255,65,0.04); }
+.project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; gap: 10px; }
+.project-header h3 { color: var(--text-primary); font-size: 1.05rem; margin: 0; line-height: 1.4; }
+.project-status { padding: 4px 12px; border-radius: 12px; font-size: 0.78rem; font-weight: bold; white-space: nowrap; background: var(--accent-orange); color: var(--bg-primary); }
+.project-status.live { background: var(--primary-green); color: var(--bg-primary); }
+.project-status.github { background: var(--accent-cyan); color: var(--bg-primary); }
+.project-description { color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; font-size: 0.92rem; }
+.project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+.tech-badge { background: rgba(0,255,65,0.1); color: var(--primary-green); padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; border: 1px solid var(--primary-green); }
+.project-links { margin-top: 10px; }
+.project-link { color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; }
+.project-link:hover { text-decoration: underline; }
+.github-link { text-align: center; padding: 20px; background: rgba(42,42,42,0.5); border-radius: 8px; }
 .github-link a { color: var(--primary-green); text-decoration: none; font-weight: bold; }
-.github-link a:hover { text-decoration: underline; }
 </style>`;
-        
+
         this.addOutput(projectsText);
     }
+
+
 }
 
 // Global functions for HTML event handlers
