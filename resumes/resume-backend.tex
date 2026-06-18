@@ -1,0 +1,123 @@
+\documentclass[a4paper,10.5pt]{article}
+\usepackage[top=0.55in, bottom=0.55in, left=0.7in, right=0.7in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{\uppercase}[\vspace{-3pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries Mahababur Rahman}
+
+\vspace{4pt}
+{\small
++880 1745010925 \quad
+\href{mailto:mahababurrahaman2014@gmail.com}{mahababurrahaman2014@gmail.com} \quad
+\href{https://linkedin.com/in/mahababur-rahaman}{linkedin.com/in/mahababur-rahaman} \quad
+\href{https://codebymamun.me}{codebymamun.me} \quad
+\href{https://github.com/mamun792}{github.com/mamun792} \quad
+Dhaka, Bangladesh
+}
+
+\vspace{4pt}
+
+\section{Profile}
+\vspace{2pt}
+
+Backend Developer with 2 years of professional experience building and maintaining production Laravel applications. Strong command of PHP OOP and SOLID principles, RESTful API design, relational database optimisation with PostgreSQL and MySQL, Redis caching and queue management, and Docker-based deployment. Experienced in designing backend systems that handle concurrent traffic across multi-vendor and multi-tenant platforms. Eager to apply backend engineering skills to location-based and geospatial services in a product-driven engineering environment.
+
+\vspace{2pt}
+
+\section{Technical Skills}
+\vspace{2pt}
+
+\begin{tabular}{@{}p{3.2cm}@{\hspace{6pt}}p{12.0cm}}
+Backend          & PHP 8.x, Laravel 11, Eloquent ORM, Migrations, Queues, Java 17, Spring Boot 3.x \\[2pt]
+Database         & PostgreSQL, MySQL, MongoDB, Redis, ProxySQL, Query Optimisation, Indexing \\[2pt]
+Geospatial       & PostgreSQL PostGIS (familiar), Tile38 (learning), location-based query design \\[2pt]
+DevOps           & Docker, Nginx, GitHub Actions CI/CD, Linux Ubuntu VPS \\[2pt]
+Architecture     & Clean Architecture, Repository Pattern, Service Layer, CQRS, DDD, SOLID \\[2pt]
+Auth and RBAC    & Laravel Policies, Gates, Spatie Permission, JWT, Role-Based Access Control \\[2pt]
+Frontend         & Next.js 15, Vue.js 3, JavaScript ES6+, jQuery \\[2pt]
+Testing          & PHPUnit Unit and Feature Testing, TDD \\[2pt]
+Integrations     & bKash, Nagad, SSLCommerz, Stripe, PayPal, Pathao, Steadfast Courier APIs \\
+\end{tabular}
+
+\vspace{2pt}
+
+\section{Professional Experience}
+\vspace{2pt}
+
+\textbf{Software Engineer} \hfill \textit{July 2024 \textemdash{} Present}\\
+\textit{Auxtech Limited, Dhaka, Bangladesh}
+
+\vspace{3pt}
+\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.3em, label={$\bullet$}]
+  \item Developed and maintained 3 concurrent production Laravel 11 platforms, MVE multi-vendor marketplace, SASA multi-tenant SaaS, and E7 LMS, building and exposing REST APIs serving both web and mobile clients under continuous traffic.
+  \item Designed and optimised relational database schemas in MySQL and PostgreSQL through composite indexing, slow query analysis, eager loading to eliminate N+1 queries, and ProxySQL read-write splitting, sustaining a 3x increase in concurrent load.
+  \item Configured Redis caching using Cache-Aside pattern with mutex locks and Laravel Queue with Horizon for asynchronous processing of emails, PDF generation, and notifications, reducing average API response time by 40 percent from 800ms to 480ms.
+  \item Built geolocation-aware shipping calculation system covering all 64 Bangladesh districts using a hybrid base fee, billable weight, and zone multiplier model, integrating courier APIs (Pathao, Steadfast) with real-time tracking and webhook handling.
+  \item Architected RBAC systems using Laravel Policies, Gates, and Spatie Permission supporting 5 or more user roles per platform with fine-grained resource-level access control.
+  \item Integrated 6 payment gateways (bKash, Nagad, Rocket, SSLCommerz, Stripe, PayPal) and 2 courier APIs with full webhook handling, signature verification, and automated retry logic for high-reliability transaction processing.
+  \item Managed Ubuntu VPS environments with Nginx, containerised services using Docker, and automated deployments via GitHub Actions CI/CD pipelines with zero-downtime release workflows.
+  \item Collaborated with Next.js 15 and Vue.js 3 frontend teams in Agile sprints, conducted code reviews, and maintained PHPUnit unit and feature test suites across all platforms.
+\end{itemize}
+
+\vspace{5pt}
+
+\textbf{Software Developer Intern, Java Backend} \hfill \textit{June 2023 \textemdash{} December 2023}\\
+\textit{Pro Info Sys BD, Dhaka, Bangladesh}
+
+\vspace{3pt}
+\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.3em, label={$\bullet$}]
+  \item Developed backend modules for an enterprise banking application using Java Spring Boot covering transaction processing, account management, and financial reporting.
+  \item Diagnosed and resolved more than 50 production defects through systematic root cause analysis and improved slow MySQL query performance through indexing and restructuring.
+  \item Achieved over 80 percent unit test coverage with JUnit 5 and Mockito following Test-Driven Development practices.
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Featured Projects}
+\vspace{2pt}
+
+\textbf{MVE \textemdash{} Multi-Vendor E-commerce Marketplace} \hfill \textit{Laravel 11, PostgreSQL, MySQL, Redis, Vue.js 3}\\
+Live production marketplace backend with vendor onboarding, 3-level priority commission engine, order and inventory management, and a district-aware shipping calculator covering all 64 Bangladesh districts using zone-based geolocation logic. Integrated 4 payment gateways and 2 courier APIs with webhook handling and retry logic.
+
+\vspace{4pt}
+
+\textbf{SASA \textemdash{} Multi-Tenant SaaS Platform} \hfill \textit{Laravel 11, PostgreSQL, Redis, Docker}\\
+Scalable multi-tenant backend with Clean Architecture, CQRS, Domain Events, cache stampede prevention via Redis mutex locks, and per-tenant data isolation using Global Scopes. Automated tenant provisioning pipeline completes in under 5 seconds via Laravel Jobs and Queues. Deployed via Docker with GitHub Actions CI/CD.
+
+\vspace{4pt}
+
+\textbf{E7 LMS \textemdash{} Learning Management System} \hfill \textit{Laravel 11, MySQL, Redis}\\
+Full-featured LMS backend with course and content management, 3-role access control (Admin, Instructor, Student) via Laravel Policies and Gates, enrolment workflows, and student progress tracking.
+
+\vspace{2pt}
+
+\section{Education}
+\vspace{2pt}
+
+\textbf{Bachelor of Science in Computer Science} \hfill \textit{2019 \textemdash{} 2023}\\
+Green University of Bangladesh \hfill CGPA: 3.13 / 4.00\\
+{\small Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Database Systems, Software Engineering, Web Development}
+
+\vspace{2pt}
+
+\section{Achievements}
+\vspace{2pt}
+
+\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.3em, label={$\bullet$}]
+  \item \textbf{LeetCode:} 150 or more algorithmic problems solved with a focus on data structures and dynamic programming.
+  \item \textbf{HackerRank:} 5-star SQL, 4-star Problem Solving, 4-star Java.
+  \item Independently acquired production skills in Docker, Redis, PostgreSQL, CI/CD pipelines, and system design alongside full-time employment.
+  \item \textbf{Languages:} Bengali (Native), English (Professional, strong written and spoken communication).
+\end{itemize}
+
+\end{document}

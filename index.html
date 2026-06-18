@@ -1,242 +1,560 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahababur Rahman | Software Engineer — Laravel · Spring Boot · Next.js</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Mahababur Rahman — Software Engineer specializing in Laravel, Spring Boot, and production backend systems. 2+ years building enterprise platforms in Dhaka, Bangladesh.">
+    <meta name="author" content="Mahababur Rahman">
+    <meta property="og:title" content="Mahababur Rahman | Software Engineer">
+    <meta property="og:description" content="Backend & Full-Stack Engineer — Laravel · Spring Boot · Next.js · Redis · PostgreSQL">
+    <meta property="og:url" content="https://codebymamun.me">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://codebymamun.me/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mahababur Rahman — Software Engineer portfolio at codebymamun.me">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mahababur Rahman | Software Engineer">
+    <meta name="twitter:description" content="Backend & Full-Stack Engineer — Laravel · Spring Boot · Next.js · Redis · PostgreSQL">
+    <meta name="twitter:image" content="https://codebymamun.me/og-image.png">
+    <title>Mahababur Rahman | Software Engineer — Laravel · Spring Boot</title>
+    <link rel="canonical" href="https://codebymamun.me">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://codebymamun.me/#website",
+                "url": "https://codebymamun.me",
+                "name": "Mahababur Rahman",
+                "description": "Software Engineer portfolio — Laravel, Spring Boot, and production backend systems.",
+                "publisher": { "@id": "https://codebymamun.me/#person" },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://codebymamun.me/#profilepage",
+                "url": "https://codebymamun.me",
+                "name": "Mahababur Rahman | Software Engineer",
+                "isPartOf": { "@id": "https://codebymamun.me/#website" },
+                "about": { "@id": "https://codebymamun.me/#person" },
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://codebymamun.me/og-image.png",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://codebymamun.me/#person",
+                "name": "Mahababur Rahman",
+                "url": "https://codebymamun.me",
+                "image": "https://codebymamun.me/og-image.png",
+                "jobTitle": "Software Engineer",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Auxtech Limited",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Dhaka",
+                        "addressCountry": "BD"
+                    }
+                },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Green University of Bangladesh"
+                },
+                "email": "mahababurrahaman2014@gmail.com",
+                "telephone": "+8801745010925",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Dhaka",
+                    "addressCountry": "BD"
+                },
+                "sameAs": [
+                    "https://github.com/mamun792",
+                    "https://linkedin.com/in/mahababur-rahaman"
+                ],
+                "knowsAbout": [
+                    "Laravel",
+                    "Spring Boot",
+                    "PHP",
+                    "Java",
+                    "PostgreSQL",
+                    "MySQL",
+                    "Redis",
+                    "Docker",
+                    "REST API",
+                    "Clean Architecture",
+                    "Next.js"
+                ]
+            }
+        ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     Matrix Rain Background 
-    <canvas id="matrix-canvas" class="matrix-background"></canvas>
-    
-     Floating Particles 
-    <div id="particles-container"></div>
-    
-    <div class="container">
-         Modern Header 
-        <div class="modern-header">
-            <div class="header-content">
-                <div class="logo-section">
-                    <div class="terminal-icon">
-                        <div class="icon-lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <h1 class="main-title">
-                        <span class="typing-text" data-text="Mahababur Rahman">Mahababur Rahman</span>
-                        <span class="subtitle">Software Engineer · Laravel · Spring Boot · Next.js</span>
-                    </h1>
-                </div>
-                <div class="status-indicators">
-                    <div class="status-dot online"></div>
-                    <span class="status-text">Available for opportunities</span>
-                </div>
-            </div>
-        </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-         Terminal Tabs with Modern Design 
-        <div class="terminal-tabs">
-            <div class="tab active" data-terminal="main">
-                <div class="tab-icon">⚡</div>
-                <span class="tab-title">main</span>
-                <button class="tab-close" onclick="closeTab('main')" style="display: none;">
-                    <svg width="12" height="12" viewBox="0 0 12 12">
-                        <path d="M1 1l10 10M1 11L11 1" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                </button>
-            </div>
-            <button class="new-tab-btn" onclick="createNewTab()">
-                <svg width="14" height="14" viewBox="0 0 14 14">
-                    <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2"/>
-                </svg>
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-ring" aria-hidden="true"></span>
+                MR
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
             </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li class="nav-resume-wrap">
+                    <button type="button" class="nav-resume" aria-haspopup="true" aria-expanded="false" id="nav-resume-btn">Resume</button>
+                    <ul class="nav-resume-menu" id="nav-resume-menu" role="menu">
+                        <li role="none"><a href="resume-backend.pdf" role="menuitem" download>Backend (Laravel)</a></li>
+                        <li role="none"><a href="resume-java.pdf" role="menuitem" download>Java (Spring)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-         Modern Terminal Window 
-        <div class="terminal-container">
-            <div class="terminal-window active" id="terminal-main">
-                 Terminal Header with Modern Controls 
-                <div class="terminal-header">
-                    <div class="terminal-controls">
-                        <div class="control-btn close">
-                            <svg width="8" height="8" viewBox="0 0 8 8">
-                                <path d="M1 1l6 6M1 7L7 1" stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <div class="control-btn minimize">
-                            <svg width="8" height="2" viewBox="0 0 8 2">
-                                <path d="M1 1h6" stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <div class="control-btn maximize">
-                            <svg width="8" height="8" viewBox="0 0 8 8">
-                                <rect x="1" y="1" width="6" height="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <span class="terminal-title">mahababur@portfolio:~$</span>
+    <header class="hero" id="hero">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="container hero-content">
+            <span class="pill animate-in" style="--delay: 0.15s">Available for Work</span>
+            <h1 class="hero-headline">
+                <span class="headline-line animate-in" style="--delay: 0.3s"><span class="split-chars">Mahababur</span></span>
+                <span class="headline-line animate-in" style="--delay: 0.45s"><span class="split-chars">Rahman</span></span>
+            </h1>
+            <p class="hero-desc animate-in" style="--delay: 0.6s">
+                Software Engineer building enterprise platforms with Laravel, Spring Boot &amp; Next.js — clean architecture, scalable APIs, and production-grade systems trusted under real traffic.
+            </p>
+            <div class="hero-actions animate-in" style="--delay: 0.75s">
+                <a href="#contact" class="btn btn-primary magnetic">Get in Touch</a>
+                <a href="#projects" class="btn btn-outline magnetic">View Projects</a>
+                <a href="resume-backend.pdf" class="btn btn-outline magnetic" download>Backend Resume</a>
+                <a href="resume-java.pdf" class="btn btn-outline magnetic" download>Java Resume</a>
+            </div>
+            <div class="hero-meta animate-in" style="--delay: 0.85s">
+                <a href="mailto:mahababurrahaman2014@gmail.com">mahababurrahaman2014@gmail.com</a>
+                <span class="sep">·</span>
+                <span>Dhaka, Bangladesh</span>
+            </div>
+            <div class="hero-social animate-in" style="--delay: 0.95s">
+                <a href="https://github.com/mamun792" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/mahababur-rahaman" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+            </div>
+            <div class="scroll-hint animate-in" style="--delay: 1.1s" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="pill">About Me</span>
+                    <h2 class="section-title">Built for Production</h2>
+                </div>
+                <div class="profile-toggle" role="tablist">
+                    <button class="profile-tab active" data-profile="fullstack" role="tab" aria-selected="true">Full-Stack</button>
+                    <button class="profile-tab" data-profile="java" role="tab" aria-selected="false">Java / Spring</button>
+                    <button class="profile-tab" data-profile="backend" role="tab" aria-selected="false">Backend / Laravel</button>
+                </div>
+                <div class="profile-panels">
+                    <div class="profile-panel active" id="profile-fullstack" role="tabpanel">
+                        <p>Software Engineer with <strong>2 years</strong> of professional experience building and maintaining production platforms using PHP/Laravel, Java Spring Boot, and Next.js. Solid understanding of Clean Architecture, SOLID principles, RESTful API design, JWT-based security, RBAC, and Test-Driven Development.</p>
+                        <p>Currently developing 3 concurrent production systems at Auxtech — multi-vendor marketplace, multi-tenant SaaS, and LMS — applying the same engineering discipline across PHP and Java stacks. Experienced in Redis caching, queue processing, database optimisation, and Docker-based CI/CD deployment.</p>
                     </div>
-                    <div class="terminal-info">
-                        <div class="connection-status">
-                            <div class="signal-bars">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </div>
-                            <span id="current-time"></span>
+                    <div class="profile-panel" id="profile-java" role="tabpanel" hidden>
+                        <p>Software Engineer with hands-on <strong>Java Spring Boot</strong> experience gained through enterprise internship and independent project development. Solid understanding of Core Java, Spring framework ecosystem, OOP, SOLID principles, RESTful API design, relational database management, and unit testing with JUnit 5 and Mockito.</p>
+                        <p>Experienced in building production-grade backend systems with clean architecture, JWT-based security, RBAC, and Test-Driven Development. Currently working as a full-stack software engineer on high-traffic production platforms, applying the same engineering principles across PHP and Java stacks. Eager to contribute to a microservices and Spring-focused engineering team.</p>
+                    </div>
+                    <div class="profile-panel" id="profile-backend" role="tabpanel" hidden>
+                        <p>Backend Developer with <strong>2 years</strong> of professional experience building and maintaining production Laravel applications. Strong command of PHP OOP and SOLID principles, RESTful API design, relational database optimisation with PostgreSQL and MySQL, Redis caching and queue management, and Docker-based deployment.</p>
+                        <p>Experienced in designing backend systems that handle concurrent traffic across multi-vendor and multi-tenant platforms. Built geolocation-aware shipping systems, integrated 6 payment gateways and courier APIs with webhook handling. Eager to apply backend engineering skills in a product-driven engineering environment.</p>
+                    </div>
+                </div>
+                <div class="stats-row stagger-group">
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="2" data-suffix="+" aria-label="2+ years experience"></span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="3" aria-label="3 production platforms"></span>
+                        <span class="stat-label">Production Platforms</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="40" data-suffix="%" aria-label="40% API latency reduction"></span>
+                        <span class="stat-label">API Latency Reduction</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="80" data-suffix="%+" aria-label="80%+ test coverage"></span>
+                        <span class="stat-label">Test Coverage (Intern)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="pill">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid stagger-group">
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+                        <div class="tags">
+                            <span class="tag">Java 17/21</span>
+                            <span class="tag">PHP 8.x</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Groovy</span>
+                            <span class="tag">JSON</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Frameworks</h3>
+                        <div class="tags">
+                            <span class="tag">Spring Boot 3.x</span>
+                            <span class="tag">Spring MVC</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">Spring Data JPA</span>
+                            <span class="tag">Laravel 11</span>
+                            <span class="tag">Next.js 15</span>
+                            <span class="tag">Vue.js 3</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Database</h3>
+                        <div class="tags">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">ProxySQL</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">PostGIS</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Testing</h3>
+                        <div class="tags">
+                            <span class="tag">JUnit 5</span>
+                            <span class="tag">Mockito</span>
+                            <span class="tag">PHPUnit</span>
+                            <span class="tag">TDD</span>
+                            <span class="tag">Spring Boot Test</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Security</h3>
+                        <div class="tags">
+                            <span class="tag">JWT</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">RBAC</span>
+                            <span class="tag">Laravel Policies</span>
+                            <span class="tag">Spatie Permission</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>DevOps</h3>
+                        <div class="tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Nginx</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Linux VPS</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Architecture</h3>
+                        <div class="tags">
+                            <span class="tag">Clean Architecture</span>
+                            <span class="tag">SOLID</span>
+                            <span class="tag">Repository Pattern</span>
+                            <span class="tag">CQRS</span>
+                            <span class="tag">DDD</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Integrations</h3>
+                        <div class="tags">
+                            <span class="tag">bKash</span>
+                            <span class="tag">Nagad</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">PayPal</span>
+                            <span class="tag">Pathao</span>
+                            <span class="tag">Steadfast</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                 Terminal Content with Modern Styling 
-                <div class="terminal-content" id="terminal-output-main">
-                    <div class="command-line">
-                        <div class="welcome-message">
-                            <div class="welcome-animation">
-                                <div class="ascii-logo">
-╔══════════════════════════════════════════════════════════════╗
-║                    MAHABABUR RAHMAN                         ║
-║              Java & Spring Boot Specialist                  ║
-║                                                              ║
-║  📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="08656960696a696a7d7a7a6960696569663a38393c486f65696164266b6765">[email&#160;protected]</a>                          ║
-║  📱 +880 1745010925                                         ║
-║  🔗 github.com/mamun792                                     ║
-║  💼 linkedin.com/in/mahababur-2-bc23/                       ║
-╚══════════════════════════════════════════════════════════════╝
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="pill">Career</span>
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                <div class="timeline animate-line">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <p class="company">Auxtech Limited</p>
+                                    <p class="location">Dhaka, Bangladesh</p>
                                 </div>
-                                <div class="welcome-text">
-                                    <div class="glitch-text" data-text="Welcome to my interactive terminal portfolio!">
-                                        Welcome to my interactive terminal portfolio!
-                                    </div>
-                                    <div class="command-hint">
-                                        Type '<span class="command-highlight pulse">help</span>' to see available commands.
-                                    </div>
-                                </div>
+                                <span class="period">July 2024 — Present</span>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Developing and maintaining <strong>3 concurrent production platforms</strong> — MVE multi-vendor marketplace, SASA multi-tenant SaaS, and E7 LMS — applying Clean Architecture, Repository Pattern, Service Layer, and SOLID principles.</li>
+                                <li>Designing RESTful APIs with JWT authentication and RBAC, serving web and mobile clients with consistent, versioned response contracts.</li>
+                                <li>Configured Redis caching (Cache-Aside + mutex locks) and Laravel Queue with Horizon, reducing average API response time by <strong>40%</strong> (800ms → 480ms).</li>
+                                <li>Optimised relational databases through composite indexing, slow query analysis, eager loading, and ProxySQL read-write splitting — sustaining a <strong>3×</strong> increase in concurrent load.</li>
+                                <li>Built geolocation-aware shipping calculator covering all <strong>64 Bangladesh districts</strong> with Pathao and Steadfast courier API integration.</li>
+                                <li>Integrated 6 payment gateways (bKash, Nagad, Rocket, SSLCommerz, Stripe, PayPal) with webhook handling and automated retry logic.</li>
+                                <li>Managed Docker containerisation and GitHub Actions CI/CD pipelines for zero-downtime deployment to Ubuntu VPS.</li>
+                                <li>Writing PHPUnit unit and feature tests following TDD; conducting code reviews in Agile sprint cycles.</li>
+                            </ul>
+                            <div class="tags">
+                                <span class="tag tag-sm">Laravel 11</span>
+                                <span class="tag tag-sm">Next.js 15</span>
+                                <span class="tag tag-sm">PostgreSQL</span>
+                                <span class="tag tag-sm">Redis</span>
+                                <span class="tag tag-sm">Docker</span>
+                                <span class="tag tag-sm">ProxySQL</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-head">
+                                <div>
+                                    <h3>Software Developer Intern, Java Backend</h3>
+                                    <p class="company">Pro Info Sys BD</p>
+                                    <p class="location">Dhaka, Bangladesh</p>
+                                </div>
+                                <span class="period">June 2023 — Dec 2023</span>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Contributed to enterprise banking system using <strong>Java 17 & Spring Boot 3.x</strong> — transaction processing, account management, and financial reporting modules.</li>
+                                <li>Built RESTful APIs handling <strong>10,000+ daily transactions</strong> using Spring Data JPA and MySQL with SOLID principles and Repository Pattern.</li>
+                                <li>Diagnosed and resolved <strong>50+ production defects</strong>; improved slow query performance by 30% through indexing and restructuring.</li>
+                                <li>Achieved <strong>80%+ unit test coverage</strong> across all modules using JUnit 5 and Mockito with TDD practices.</li>
+                                <li>Built Leave Management System with dynamic rule engine — configurable leave types, policy-based accrual, and automated generation per role.</li>
+                            </ul>
+                            <div class="tags">
+                                <span class="tag tag-sm">Java 17</span>
+                                <span class="tag tag-sm">Spring Boot</span>
+                                <span class="tag tag-sm">Spring MVC</span>
+                                <span class="tag tag-sm">JUnit 5</span>
+                                <span class="tag tag-sm">Mockito</span>
+                                <span class="tag tag-sm">MySQL</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
+            </div>
+        </section>
 
-                 Modern Input Line 
-                <div class="input-line">
-                    <div class="prompt-container">
-                        <span class="user">mahababur</span>
-                        <span class="separator">@</span>
-                        <span class="host">portfolio</span>
-                        <span class="path">:~$</span>
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="pill">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid stagger-group">
+                    <article class="project-card featured">
+                        <div class="project-meta">
+                            <span class="project-status live">Production</span>
+                            <span class="project-date">2024 — Present</span>
+                        </div>
+                        <h3>MVE — Multi-Vendor E-commerce Marketplace</h3>
+                        <p>Live production marketplace backend with vendor onboarding, 3-level priority commission engine, order & inventory management, and district-aware shipping calculator covering all 64 Bangladesh districts. Integrated 4 payment gateways and 2 courier APIs with webhook handling.</p>
+                        <div class="tags">
+                            <span class="tag tag-sm">Laravel 11</span>
+                            <span class="tag tag-sm">PostgreSQL</span>
+                            <span class="tag tag-sm">Redis</span>
+                            <span class="tag tag-sm">Vue.js 3</span>
+                        </div>
+                    </article>
+                    <article class="project-card featured">
+                        <div class="project-meta">
+                            <span class="project-status live">Production</span>
+                            <span class="project-date">2024 — Present</span>
+                        </div>
+                        <h3>SASA — Multi-Tenant SaaS Platform</h3>
+                        <p>Scalable multi-tenant backend with Clean Architecture, CQRS, Domain Events, cache stampede prevention via Redis mutex locks, and per-tenant data isolation. Automated tenant provisioning completes in under 5 seconds via Laravel Jobs and Queues.</p>
+                        <div class="tags">
+                            <span class="tag tag-sm">Laravel 11</span>
+                            <span class="tag tag-sm">PostgreSQL</span>
+                            <span class="tag tag-sm">Redis</span>
+                            <span class="tag tag-sm">Docker</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-status live">Production</span>
+                            <span class="project-date">2024 — Present</span>
+                        </div>
+                        <h3>E7 LMS — Learning Management System</h3>
+                        <p>Full-featured LMS backend with course management, 3-role access control (Admin, Instructor, Student) via Laravel Policies and Gates, enrolment workflows, and student progress tracking.</p>
+                        <div class="tags">
+                            <span class="tag tag-sm">Laravel 11</span>
+                            <span class="tag tag-sm">MySQL</span>
+                            <span class="tag tag-sm">Redis</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-status github">Open Source</span>
+                        </div>
+                        <h3>LeaveManager — Enterprise Leave Management</h3>
+                        <p>Multi-level leave approval workflow for 500+ employees. RBAC with Spring Security (Admin, Manager, Employee), JWT authentication, Spring Mail notifications, and Spring AOP audit logging for compliance.</p>
+                        <div class="tags">
+                            <span class="tag tag-sm">Java 17</span>
+                            <span class="tag tag-sm">Spring Boot 3.x</span>
+                            <span class="tag tag-sm">Spring Security</span>
+                            <span class="tag tag-sm">MySQL</span>
+                        </div>
+                        <a href="https://github.com/mamun792/LeaveApplication_Api" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span class="project-status github">Open Source</span>
+                        </div>
+                        <h3>QuizApp — Interactive Assessment Platform</h3>
+                        <p>Full-stack quiz application with Spring MVC and Thymeleaf. CRUD for quiz management, automatic grading engine with real-time result calculation, and analytics dashboard using Spring Data JPA with PostgreSQL.</p>
+                        <div class="tags">
+                            <span class="tag tag-sm">Java 17</span>
+                            <span class="tag tag-sm">Spring MVC</span>
+                            <span class="tag tag-sm">PostgreSQL</span>
+                            <span class="tag tag-sm">WebSocket</span>
+                        </div>
+                        <a href="https://github.com/mamun792/quizApp" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="pill">Academic</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-head">
+                        <div>
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <p class="company">Green University of Bangladesh</p>
+                        </div>
+                        <div class="edu-meta">
+                            <span class="period">2019 — 2023</span>
+                            <span class="cgpa">CGPA: 3.13 / 4.00</span>
+                        </div>
                     </div>
-                    <div class="input-container">
-                        <input type="text" class="terminal-input" id="terminal-input-main" autocomplete="off" spellcheck="false">
-                        <div class="input-suggestions" id="suggestions-main"></div>
+                    <p class="edu-coursework">Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming (Java), Database Systems, Software Engineering, Web Technologies</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="achievements">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="pill">Recognition</span>
+                    <h2 class="section-title">Achievements</h2>
+                </div>
+                <div class="achievements-grid stagger-group">
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                        </div>
+                        <h3>LeetCode</h3>
+                        <p>150+ problems solved — data structures, algorithms, and dynamic programming</p>
                     </div>
-                    <div class="cursor-container">
-                        <span class="modern-cursor">█</span>
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <h3>HackerRank</h3>
+                        <p>5-star SQL · 4-star Java · 4-star Problem Solving</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                        </div>
+                        <h3>Self-Directed Learning</h3>
+                        <p>Spring Cloud microservices, Apache Kafka, Kubernetes, Docker, Redis, and CI/CD pipelines alongside full-time employment</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                        </div>
+                        <h3>Languages</h3>
+                        <p>Bengali (Native) · English (Professional — strong written & spoken)</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <span class="pill">Let's Talk</span>
+                    <h2>Start a Project</h2>
+                    <p>Available for backend, full-stack, and Java/Spring Boot opportunities. Open to discussing your next project.</p>
+                    <div class="contact-actions">
+                        <a href="mailto:mahababurrahaman2014@gmail.com" class="btn btn-primary">Send Email</a>
+                        <a href="https://linkedin.com/in/mahababur-rahaman" target="_blank" rel="noopener" class="btn btn-outline">Connect on LinkedIn</a>
+                    </div>
+                    <div class="contact-details">
+                        <a href="tel:+8801745010925">+880 1745010925</a>
+                        <span class="sep">·</span>
+                        <a href="mailto:mahababurrahaman2014@gmail.com">mahababurrahaman2014@gmail.com</a>
+                        <span class="sep">·</span>
+                        <a href="https://codebymamun.me" target="_blank" rel="noopener">codebymamun.me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Mahababur Rahman. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/mamun792" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/mahababur-rahaman" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://codebymamun.me" target="_blank" rel="noopener">codebymamun.me</a>
             </div>
         </div>
-
-         Modern Quick Commands 
-        <div class="quick-commands">
-            <div class="commands-header">
-                <span class="commands-title">Quick Commands</span>
-                <div class="commands-toggle">
-                    <button class="toggle-btn" onclick="toggleCommands()">
-                        <svg width="16" height="16" viewBox="0 0 16 16">
-                            <path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="commands-grid">
-                <button class="quick-cmd primary" onclick="executeQuickCommand('help')" data-tooltip="Show all commands">
-                    <span class="cmd-icon">❓</span>
-                    <span class="cmd-text">help</span>
-                </button>
-                <button class="quick-cmd" onclick="executeQuickCommand('about')" data-tooltip="Professional summary">
-                    <span class="cmd-icon">👨‍💻</span>
-                    <span class="cmd-text">about</span>
-                </button>
-                <button class="quick-cmd" onclick="executeQuickCommand('skills')" data-tooltip="Technical skills">
-                    <span class="cmd-icon">🛠️</span>
-                    <span class="cmd-text">skills</span>
-                </button>
-                <button class="quick-cmd" onclick="executeQuickCommand('experience')" data-tooltip="Work experience">
-                    <span class="cmd-icon">💼</span>
-                    <span class="cmd-text">experience</span>
-                </button>
-                <button class="quick-cmd" onclick="executeQuickCommand('projects')" data-tooltip="Project portfolio">
-                    <span class="cmd-icon">🚀</span>
-                    <span class="cmd-text">projects</span>
-                </button>
-                <button class="quick-cmd" onclick="executeQuickCommand('contact')" data-tooltip="Contact information">
-                    <span class="cmd-icon">📞</span>
-                    <span class="cmd-text">contact</span>
-                </button>
-                <button class="quick-cmd" onclick="executeQuickCommand('achievements')" data-tooltip="Accomplishments">
-                    <span class="cmd-icon">🏆</span>
-                    <span class="cmd-text">achievements</span>
-                </button>
-                <button class="quick-cmd danger" onclick="executeQuickCommand('clear')" data-tooltip="Clear terminal">
-                    <span class="cmd-icon">🗑️</span>
-                    <span class="cmd-text">clear</span>
-                </button>
-            </div>
-        </div>
-
-         Modern Footer 
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <span class="version">Terminal Portfolio v3.0</span>
-                    <span class="tech-stack">Built with HTML, CSS & JavaScript</span>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="https://github.com/mamun792" class="social-link" data-tooltip="GitHub">
-                            <svg width="16" height="16" viewBox="0 0 16 16">
-                                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com/in/mahababur-2-bc23/" class="social-link" data-tooltip="LinkedIn">
-                            <svg width="16" height="16" viewBox="0 0 16 16">
-                                <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="tip">
-                        💡 Use <kbd>Tab</kbd> for autocomplete, <kbd>↑↓</kbd> for history
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     Loading Screen 
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <div class="terminal-boot">
-                    <div class="boot-line">Initializing Terminal Portfolio...</div>
-                    <div class="boot-line">Loading Software Engineer Profile...</div>
-                    <div class="boot-line">Connecting to mahababur@portfolio...</div>
-                    <div class="boot-line success">Connection established ✓</div>
-                </div>
-            </div>
-            <div class="loading-bar">
-
-                
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

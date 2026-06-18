@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#000000"/>
+  <circle cx="1050" cy="120" r="180" fill="#d4ff00" opacity="0.08"/>
+  <circle cx="150" cy="520" r="220" fill="#d4ff00" opacity="0.05"/>
+  <rect x="80" y="80" width="140" height="36" rx="18" fill="#ffffff"/>
+  <text x="150" y="104" fill="#000000" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">AVAILABLE FOR WORK</text>
+  <text x="80" y="220" fill="#ffffff" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">MAHABABUR</text>
+  <text x="80" y="310" fill="#ffffff" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">RAHMAN</text>
+  <text x="80" y="380" fill="#d4ff00" font-family="Arial, sans-serif" font-size="28" font-weight="600">Software Engineer</text>
+  <text x="80" y="430" fill="#737373" font-family="Arial, sans-serif" font-size="24">Laravel · Spring Boot · Next.js · Redis · PostgreSQL</text>
+  <text x="80" y="520" fill="#525252" font-family="Arial, sans-serif" font-size="20">codebymamun.me</text>
+  <circle cx="80" cy="80" r="0" fill="none"/>
+  <circle cx="1120" cy="80" r="28" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="1120" cy="80" r="14" fill="none" stroke="#d4ff00" stroke-width="2"/>
+</svg>
