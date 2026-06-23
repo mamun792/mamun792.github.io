@@ -249,4 +249,52 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+
+    /* ── Contact form (Web3Forms) ── */
+    var contactForm = document.getElementById('contact-form');
+    var formStatus = document.getElementById('form-status');
+    var formSubmit = document.getElementById('form-submit');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var name = contactForm.querySelector('[name="name"]').value.trim();
+            var email = contactForm.querySelector('[name="email"]').value.trim();
+            var message = contactForm.querySelector('[name="message"]').value.trim();
+
+            if (!name || !email || !message) {
+                formStatus.textContent = 'Please fill in all fields.';
+                formStatus.className = 'form-status error';
+                return;
+            }
+
+            formSubmit.disabled = true;
+            formSubmit.textContent = 'Sending...';
+            formStatus.textContent = '';
+            formStatus.className = 'form-status';
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            }).then(function (res) {
+                return res.json();
+            }).then(function (data) {
+                if (data.success) {
+                    formStatus.textContent = 'Message sent! I\'ll get back to you within 24 hours.';
+                    formStatus.className = 'form-status success';
+                    contactForm.reset();
+                } else {
+                    throw new Error(data.message || 'Submission failed');
+                }
+            }).catch(function () {
+                formStatus.textContent = 'Something went wrong. Please email me directly.';
+                formStatus.className = 'form-status error';
+            }).finally(function () {
+                formSubmit.disabled = false;
+                formSubmit.textContent = 'Send Message';
+            });
+        });
+    }
 })();

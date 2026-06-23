@@ -135,6 +135,10 @@
     <header class="hero" id="hero">
         <div class="hero-grain" aria-hidden="true"></div>
         <div class="container hero-content">
+            <div class="hero-avatar animate-in" style="--delay: 0.1s">
+                <!-- PHOTO: Replace div below with <img src="profile.jpg" alt="Mahababur Rahman"> once you have a professional headshot -->
+                <div class="avatar-initials" aria-hidden="true">MR</div>
+            </div>
             <span class="pill animate-in" style="--delay: 0.15s">Available for Work</span>
             <h1 class="hero-headline">
                 <span class="headline-line animate-in" style="--delay: 0.3s"><span class="split-chars">Mahababur</span></span>
@@ -146,8 +150,6 @@
             <div class="hero-actions animate-in" style="--delay: 0.75s">
                 <a href="#contact" class="btn btn-primary magnetic">Get in Touch</a>
                 <a href="#projects" class="btn btn-outline magnetic">View Projects</a>
-                <a href="resume-backend.pdf" class="btn btn-outline magnetic" download>Backend Resume</a>
-                <a href="resume-java.pdf" class="btn btn-outline magnetic" download>Java Resume</a>
             </div>
             <div class="hero-meta animate-in" style="--delay: 0.85s">
                 <a href="mailto:mahababurrahaman2014@gmail.com">mahababurrahaman2014@gmail.com</a>
@@ -210,7 +212,7 @@
                     </div>
                     <div class="stat-card">
                         <span class="stat-value" data-count="80" data-suffix="%+" aria-label="80%+ test coverage"></span>
-                        <span class="stat-label">Test Coverage (Intern)</span>
+                        <span class="stat-label">Test Coverage</span>
                     </div>
                 </div>
             </div>
@@ -229,8 +231,7 @@
                             <span class="tag">Java 17/21</span>
                             <span class="tag">PHP 8.x</span>
                             <span class="tag">JavaScript</span>
-                            <span class="tag">Groovy</span>
-                            <span class="tag">JSON</span>
+                            <span class="tag">SQL</span>
                         </div>
                     </div>
                     <div class="skill-card">
@@ -402,6 +403,7 @@
                             <span class="tag tag-sm">Redis</span>
                             <span class="tag tag-sm">Vue.js 3</span>
                         </div>
+                        <p class="project-private">Live production system &mdash; Confidential / NDA</p>
                     </article>
                     <article class="project-card featured">
                         <div class="project-meta">
@@ -416,6 +418,7 @@
                             <span class="tag tag-sm">Redis</span>
                             <span class="tag tag-sm">Docker</span>
                         </div>
+                        <p class="project-private">Live production system &mdash; Confidential / NDA</p>
                     </article>
                     <article class="project-card">
                         <div class="project-meta">
@@ -429,6 +432,7 @@
                             <span class="tag tag-sm">MySQL</span>
                             <span class="tag tag-sm">Redis</span>
                         </div>
+                        <p class="project-private">Live production system &mdash; Confidential / NDA</p>
                     </article>
                     <article class="project-card">
                         <div class="project-meta">
@@ -509,15 +513,15 @@
                         <div class="achievement-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
                         </div>
-                        <h3>Self-Directed Learning</h3>
-                        <p>Spring Cloud microservices, Apache Kafka, Kubernetes, Docker, Redis, and CI/CD pipelines alongside full-time employment</p>
+                        <h3>Continuous Learning</h3>
+                        <p>Actively building with Spring Cloud, Apache Kafka, and Kubernetes while working full-time — applying each concept directly in production projects</p>
                     </div>
                     <div class="achievement-card">
                         <div class="achievement-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
                         </div>
-                        <h3>Languages</h3>
-                        <p>Bengali (Native) · English (Professional — strong written & spoken)</p>
+                        <h3>Multilingual</h3>
+                        <p>Bengali (Native) · English (Professional — strong written &amp; spoken)</p>
                     </div>
                 </div>
             </div>
@@ -529,9 +533,31 @@
                     <span class="pill">Let's Talk</span>
                     <h2>Start a Project</h2>
                     <p>Available for backend, full-stack, and Java/Spring Boot opportunities. Open to discussing your next project.</p>
+                    <!-- FORM SETUP: Go to web3forms.com → enter your email → get access key → replace YOUR_ACCESS_KEY below -->
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+                        <input type="hidden" name="subject" value="New message from codebymamun.me">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" name="name" required autocomplete="name" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" required rows="4" placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="form-submit">Send Message</button>
+                        <p class="form-status" id="form-status" aria-live="polite" role="status"></p>
+                    </form>
+                    <div class="contact-divider"><span>or reach out directly</span></div>
                     <div class="contact-actions">
-                        <a href="mailto:mahababurrahaman2014@gmail.com" class="btn btn-primary">Send Email</a>
-                        <a href="https://linkedin.com/in/mahababur-rahaman" target="_blank" rel="noopener" class="btn btn-outline">Connect on LinkedIn</a>
+                        <a href="mailto:mahababurrahaman2014@gmail.com" class="btn btn-outline">Send Email</a>
+                        <a href="https://linkedin.com/in/mahababur-rahaman" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
                     </div>
                     <div class="contact-details">
                         <a href="tel:+8801745010925">+880 1745010925</a>
